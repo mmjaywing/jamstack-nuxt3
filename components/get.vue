@@ -7,8 +7,7 @@
     </div>
     <div v-else>
         <div v-for="post in posts.items" :key="post">
-            <!-- do something -->
-            {{ post.data.title }}
+            {{ post.data.title.iv }}
         </div>
     </div>
 
@@ -17,11 +16,12 @@
 <script setup>
 
 // useFetch
-const { pending, data: posts } = useLazyFetch('https://cloud.squidex.io/api/content/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/posts')
+const headers = useRequestHeaders(['cookie'])
+const { pending, data: posts } = useLazyFetch('https://cloud.squidex.io/api/content/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/posts', { headers })
 watch(posts, (newPosts) => {
     // Because posts starts out null, you will not have access
     // to its contents immediately, but you can watch it.
-    // console.log(newPosts.items)
+    console.log(newPosts.items)
 })
 console.log(posts)
 </script>
