@@ -12,6 +12,7 @@
     "nuxt-windicss": "^2.6.0"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.6"
+    "@pinia/nuxt": "^0.4.6",
+    "@vueuse/nuxt": "^9.6.0"
   }
 }

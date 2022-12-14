@@ -2,6 +2,8 @@ import { defineNuxtConfig } from 'nuxt/config'
 // import ViteComponents from 'unplugin-vue-components/vite'
 // import IconsResolver from 'unplugin-icons/resolver'
 
+
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -12,6 +14,7 @@ export default defineNuxtConfig({
 
   modules: [
     'nuxt-windicss',
+    '@vueuse/nuxt',
     '@pinia/nuxt',
   ],
   
