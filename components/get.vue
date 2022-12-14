@@ -1,51 +1,28 @@
 
 <template>
+    <!--<pre>{{ posts }} </pre>-->
+    total {{ posts.total }}
+    <div v-if="pending">
+        Loading ...
+    </div>
+    <div v-else>
+        <div v-for="post in posts.items" :key="post">
+            <!-- do something -->
+            {{ post.data.title }}
+        </div>
+    </div>
 
-    <ul>
-        <li v-for="user in users"
-          :key="user">{{ user.name }}</li>
-    </ul>
-    
-   {{ users }}
 </template>
-
-
-
+ 
 <script setup>
-const { data: users } = await useFetch('https://gorest.co.in/public/v2/users')
 
-console.log(users)
+// useFetch
+const { pending, data: posts } = useLazyFetch('https://cloud.squidex.io/api/content/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/posts')
+watch(posts, (newPosts) => {
+    // Because posts starts out null, you will not have access
+    // to its contents immediately, but you can watch it.
+    // console.log(newPosts.items)
+})
+console.log(posts)
 </script>
-
-<!--
-<script  >
-export default {
-    // fetch data from server/api
-
-    methods: {
-
-
-    },
-
-    /* async mounted() {
-
-
-        const { data } = await useAsyncData('https://cloud.squidex.io/api/content/garpunkaldev/experience', () => {
-            return $fetch('https://cloud.squidex.io/api/content/garpunkaldev/experience', {
-                params: {
-                    name: 'world'
-                }
-            })
-        })
-
-        console.log("DATA", data)
-    } */ 
-
-
-
-
-
-}
-
-
-</script> -->
+ 
