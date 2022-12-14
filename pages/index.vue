@@ -1,4 +1,10 @@
 <template>
     <!-- Nuxt automatically imports any components in your components/ directory -->
-    <Nav />
+    <div>Content in index</div>
 </template>
+
+<script>
+definePageMeta({
+    layout: 'page',
+})
+</script>
