@@ -7,7 +7,7 @@
     </div>
     <div v-else>
         <div v-for="post in posts.items" :key="post">
-            {{ post.data.title.iv }}
+            {{ post.data.title.iv }} / {{ post.id }}
         </div>
     </div>
 
