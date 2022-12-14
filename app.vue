@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-red-300">
-     hello 
+  <div>
+    <!-- Markup shared across all pages, ex: NavBar -->
+    <NuxtPage />
   </div>
 </template>
