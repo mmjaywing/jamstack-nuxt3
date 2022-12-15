@@ -1,7 +1,7 @@
  
 <template>
     <!--<pre>{{ posts }} </pre>-->
-    total {{ posts.total }}
+   
     <div v-if="pending">
         Loading ...
     </div>
