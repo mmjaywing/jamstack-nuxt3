@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-full bg-black text-white justify-between h-[60px] px-8 items-center gap-4">
-    <NuxtLink to="/">
-        Logo</NuxtLink>
+    <NuxtLink to="/"><img src="../logo.svg" />
+   </NuxtLink>
         
         <div class="flex gap-4">
       <NuxtLink to="/basket/">
