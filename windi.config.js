@@ -5,5 +5,9 @@ export default defineConfig({
   attributify: true,
   shortcuts: {
     'text-primary': 'text-[#00DC82]'
-  }
+  },
+  plugins: [
+    require('windicss/plugin/typography'),
+    // ...
+  ],
 })
