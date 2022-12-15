@@ -7,8 +7,12 @@
     </div>
     <div v-else>
         <div v-for="post in posts.items" :key="post">
-            <NuxtLink :to="`/posts/${post.id}`" class=""> {{
-                    post.data.title.iv
+            <!--<NuxtLink :to="`/posts/${post.id}`" class=""> {{
+                    post.data.title.iv 
+            }}  
+            </NuxtLink>-->
+            <NuxtLink :to="`/posts/${post.data.slug.iv }`" class=""> {{
+                    post.data.title.iv 
             }}  
             </NuxtLink>
         </div>
