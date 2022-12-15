@@ -16,9 +16,16 @@
                     post.data.title.iv 
             }}  
             </NuxtLink>-->
-                <NuxtLink :to="`/posts/${post.data.slug.iv}`" class=""> {{
-                        post.data.title.iv
-                }}
+                <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="">
+
+                    <img
+                        :src="`https://cloud.squidex.io/api/assets/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/${post.data.image.iv[0]}`" />
+
+
+
+                    {{
+        post.data.title.iv
+                    }}
                 </NuxtLink>
             </div>
         </div>
