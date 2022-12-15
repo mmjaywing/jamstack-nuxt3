@@ -1,6 +1,5 @@
 <template>
-  LOGO
-  <NuxtLink to="/posts/">Posts</NuxtLink>
+  Footer s
 </template>
 
 <script>
