@@ -16,8 +16,9 @@ export default defineNuxtConfig({
     'nuxt-windicss',
     '@vueuse/nuxt',
     '@pinia/nuxt',
+    '@nuxt/image-edge',
   ],
-  
+
   /* modules: [
     'nuxt-windicss',
     '@pinia/nuxt',
@@ -32,7 +33,7 @@ export default defineNuxtConfig({
         }
       }
     ]
-  ], */ 
+  ], */
   /* vite: {
     plugins: [
       ViteComponents({
