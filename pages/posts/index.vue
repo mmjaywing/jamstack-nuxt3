@@ -12,20 +12,14 @@
         </div>
         <div v-else class="grid grid-cols-2 gap-8">
             <div v-for="post in posts.items" :key="post" class="bg-white">
-                <!--<NuxtLink :to="`/posts/${post.id}`" class=""> {{
-                    post.data.title.iv 
+            <!--<NuxtLink :to="`/posts/${post.id}`" class=""> {{
+                post.data.title.iv 
             }}  
             </NuxtLink>-->
                 <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="">
-
-                    <img
-                        :src="`https://cloud.squidex.io/api/assets/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/${post.data.image.iv[0]}`" />
-
-
-
-                    {{
-        post.data.title.iv
-                    }}
+                    <img :src="`https://cloud.squidex.io/api/assets/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/${post.data.image.iv[0]}`"
+                        class="w-full h-80 object-cover" />
+                    {{ post.data.title.iv }}
                 </NuxtLink>
             </div>
         </div>

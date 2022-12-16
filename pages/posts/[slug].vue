@@ -1,4 +1,7 @@
 <template>
+    <img :src="`https://cloud.squidex.io/api/assets/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/${postData.items[0].data.image.iv[0]}`"
+        class="w-full h-120 object-cover" />
+
     {{ $route.params.slug }} /
     {{ postData.items[0].data.title.iv }} /
     {{ postData.items[0].data.text.iv }}
@@ -21,7 +24,7 @@ const { data: postData } = await useFetch(`https://cloud.squidex.io/api/content/
 console.log(postData)
 
 
- 
+
 </script>
 
 <!-- 
