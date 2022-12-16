@@ -19,6 +19,7 @@
                 <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="">
                     <nuxt-img
                         :src="`https://cloud.squidex.io/api/assets/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/${post.data.image.iv[0]}`"
+                        :alt="post.data.title.iv"
                         class="w-full h-80 object-cover" />
 
                     {{ post.data.title.iv }}

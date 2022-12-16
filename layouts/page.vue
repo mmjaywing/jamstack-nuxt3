@@ -2,7 +2,7 @@
     <div>
         <slot name="app-before" />
         <div id="app-before"></div>
-        <div class="flex flex-col min-h-screen bg-gray-900">
+        <div class="flex flex-col min-h-screen bg-neutral-900">
             <slot name="header">
                 <Nav />
             </slot>
