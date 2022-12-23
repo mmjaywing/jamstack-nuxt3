@@ -1,5 +1,5 @@
 <template>
-  Footer s
+  <div class="w-full bg-neutral-200 p-8">Footer</div>
 </template>
 
 <script>

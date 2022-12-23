@@ -10,4 +10,13 @@ export default defineConfig({
     require('windicss/plugin/typography'),
     // ...
   ],
+
+  theme: {
+    extend: {
+      backgroundImage: {
+        'hero': "url('/images/kelsey-knight-udj2tD3WKsY-unsplash.webp')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      }
+    }
+  }
 })
