@@ -13,6 +13,7 @@
     "nuxt-windicss": "^2.6.0"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^2.0.0",
     "@pinia/nuxt": "^0.4.6",
     "@tailwindcss/typography": "^0.5.8",
     "@vueuse/nuxt": "^9.6.0"
