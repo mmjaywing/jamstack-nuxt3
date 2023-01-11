@@ -13,7 +13,6 @@
 </template>
 
 <script setup>
-
 definePageMeta({
     layout: 'page-wide',
 })
