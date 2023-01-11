@@ -15,8 +15,11 @@ export default defineConfig({
     extend: {
       backgroundImage: {
         'hero': "url('/images/kelsey-knight-udj2tD3WKsY-unsplash.webp')",
-        'footer-texture': "url('/img/footer-texture.png')",
-      }
+      },
+      fontFamily: {
+        sans: ['"Noto Sans"', 'sans-serif'],
+        serif: ['"Noto Serif"', 'serif']
+      },
     }
   }
 })

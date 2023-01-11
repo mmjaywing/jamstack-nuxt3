@@ -4,7 +4,28 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Jaywing',
-      link: [{ rel: 'icon', type: 'image/*', href: '/favicon.svg' }],
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/*',
+          href: '/favicon.svg'
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com'
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: 'crossorigin',
+        },
+        {
+          rel: 'preload',
+          href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif&display=swap',
+          as: 'style',
+          onload: "this.onload=null;this.rel='stylesheet'"
+        }
+      ],
       meta: [ 
         { name: 'description', content: 'Meta description' }
       ],
