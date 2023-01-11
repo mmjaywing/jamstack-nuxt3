@@ -1,9 +1,9 @@
  
 <template>
     <div class="flex flex-col gap-20 py-20">
-        <div class="text-center prose max-w-full">
-            <h1 class="!text-white"> {{ page.data.title.iv }} </h1>
-            <p class="!text-white">{{ page.data.text.iv }}</p>
+        <div class="text-center max-w-full">
+            <h1 class=""> {{ page.data.title.iv }} </h1>
+            <p class="">{{ page.data.text.iv }}</p>
         </div>
         <div v-if="pending">
             Loading ...

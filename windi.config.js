@@ -26,9 +26,9 @@ export default defineConfig({
       'hero': 'calc(100vh - 60px)',
     },
 
-    typography: ({ theme }) => ({
+    /* typography: ({ theme }) => ({
 
-    })
+    }) */ 
 
 
   }
