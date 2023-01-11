@@ -20,4 +20,11 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/image-edge'
   ],
+
+  runtimeConfig: {
+    public: {
+      API_BASE_URL: process.env.API_BASE_URL || "default_api_url",
+      API_ASSETS_URL: process.env.API_ASSETS_URL || "default_api_url"
+    }
+  }
 })
