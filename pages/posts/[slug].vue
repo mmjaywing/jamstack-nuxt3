@@ -5,15 +5,12 @@
         :src="`https://cloud.squidex.io/api/assets/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/${postData.items[0].data.image.iv[0]}`"
         alt="image" class="w-full h-120 object-cover" />
 
-
-
     {{ $route.params.slug }} /
     {{ postData.items[0].data.title.iv }} /
     <p class="text-white"> {{ postData.items[0].data.text.iv }} xx</p>
 
     <pre class="text-white">{{ postData }} </pre>
 </template>
-
 
 <script setup>
 
