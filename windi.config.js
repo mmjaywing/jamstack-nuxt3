@@ -20,6 +20,16 @@ export default defineConfig({
         sans: ['"Noto Sans"', 'sans-serif'],
         serif: ['"Noto Serif"', 'serif']
       },
-    }
+    },
+
+    height: {
+      'hero': 'calc(100vh - 60px)',
+    },
+
+    typography: ({ theme }) => ({
+
+    })
+
+
   }
 })

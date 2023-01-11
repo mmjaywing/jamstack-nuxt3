@@ -5,7 +5,9 @@
                 <Header />
             </slot>
 
-            <slot />
+            <div class="mt-[60px]">
+                <slot />
+            </div>
 
             <slot name="footer">
                 <Footer />
@@ -13,6 +15,5 @@
         </div>
     </div>
 </template>
-  
-
  
+
