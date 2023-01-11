@@ -87,13 +87,15 @@
         </div>
     </div>
 
+    STORE NAME = {{ store.name }} / {{ store.counter }}
 
+    <button @click="clickMe()">CLICK ME</button>
 
 
 </template>
 
 <script setup>
- 
+
 import { useStore } from '~/store/store'
 
 
@@ -103,6 +105,15 @@ definePageMeta({
 
 const store = useStore()
 
+console.log("STORE = ", store)
 console.log("STORE = ", store.name)
+
+
+let clickMe = () => {
+    store.$patch({
+        counter: store.counter + 1
+    })
+};
+
 
 </script>
