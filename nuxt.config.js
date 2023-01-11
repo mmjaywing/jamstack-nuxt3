@@ -24,13 +24,23 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif&display=swap',
           as: 'style',
           onload: "this.onload=null;this.rel='stylesheet'"
-        }
+        },
       ],
       meta: [ 
         { name: 'description', content: 'Meta description' }
       ],
       htmlAttrs: {
         lang: 'en'
+      },
+    }
+  },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/style.scss" as *;'
+        }
       }
     }
   },
@@ -41,6 +51,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/image-edge'
   ],
+
+ 
 
   runtimeConfig: {
     public: {

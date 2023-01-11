@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="flex flex-col min-h-screen bg-neutral-900">
+        <div class="flex flex-col min-h-screen">
             <slot name="header">
                 <Nav />
             </slot>

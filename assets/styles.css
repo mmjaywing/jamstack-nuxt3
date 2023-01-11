@@ -1,0 +1,20 @@
+body {
+    @apply bg-[#1F2128] text-[#9ba0b3] font-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply text-white font-sans;
+}
+
+a {
+    @apply font-sans;
+}
+
+.btn {
+    @apply flex flex-row items-center justify-center h-[60px] self-start px-8 bg-white text-black;
+}
