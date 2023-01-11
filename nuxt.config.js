@@ -52,7 +52,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge'
   ],
 
- 
+  buildModules: ['@pinia/nuxt'],
 
   runtimeConfig: {
     public: {

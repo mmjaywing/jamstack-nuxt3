@@ -71,10 +71,10 @@
         </div>
         <div class="w-1/4 flex justify-between flex-col  gap-6">
             <nuxt-img
-                    src="https://images.unsplash.com/photo-1630771496884-46ce7c270a52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
-                    alt="test" sizes="sm:200px lg:400px" class="w-full h-100 object-cover" />
+                src="https://images.unsplash.com/photo-1630771496884-46ce7c270a52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
+                alt="test" sizes="sm:200px lg:400px" class="w-full h-100 object-cover" />
 
-             
+
             <div class="flex flex-col gap-6 p-8">
                 <h3 class="text-2xl">Vestibulum Lorem Commodo</h3>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
@@ -86,14 +86,23 @@
             </div>
         </div>
     </div>
-    
 
 
- 
+
+
 </template>
 
-<script>
+<script setup>
+ 
+import { useStore } from '~/store/store'
+
+
 definePageMeta({
     layout: 'page-wide',
 })
+
+const store = useStore()
+
+console.log("STORE = ", store.name)
+
 </script>
