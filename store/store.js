@@ -3,19 +3,28 @@ import { defineStore, acceptHMRUpdate} from 'pinia'
 
 export const useStore = defineStore('storeId', {
   // arrow function recommended for full type inference
-  state: () => {
+  /* state: () => {
     return {
       // all these properties will have their type inferred automatically
       counter: 10,
       name: 'Eduardo',
       isAdmin: true,
     }
+  }, */ 
+
+  state: () => {
+    return {
+        counter: 10,
+        name: 'Maki',
+    }
   },
-  actions:{
+  persist: true,
+
+  /* actions:{
      hit(){
        this.counter++;
      }
-  },
+  }, */ 
 
   getters:{
     getCount:(state)=>state.counter,

@@ -49,6 +49,7 @@ export default defineNuxtConfig({
     'nuxt-windicss',
     '@vueuse/nuxt',
     '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
     '@nuxt/image-edge'
   ],
 
