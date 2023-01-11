@@ -92,6 +92,10 @@
     <button @click="clickMe()">CLICK ME</button>
 
 
+
+    <button @click="store.hit()">CLICK ME 2</button>
+
+
 </template>
 
 <script setup>
@@ -114,6 +118,7 @@ let clickMe = () => {
         counter: store.counter + 1
     })
 };
+ 
 
 
 </script>

@@ -20,11 +20,11 @@ export const useStore = defineStore('storeId', {
   },
   persist: true,
 
-  /* actions:{
+  actions:{
      hit(){
        this.counter++;
      }
-  }, */ 
+  }, 
 
   getters:{
     getCount:(state)=>state.counter,
