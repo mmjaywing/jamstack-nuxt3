@@ -2,7 +2,7 @@
     <div>
         <div class="flex flex-col min-h-screen bg-neutral-900">
             <slot name="header">
-                <Nav />
+                <Header />
             </slot>
 
             <slot />
