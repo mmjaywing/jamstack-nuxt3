@@ -1,10 +1,13 @@
  
 <template>
-    <div class="flex flex-col gap-20 py-20">
-        <div class="text-center">
-            <h1 class=""> {{ page.data.title.iv }} </h1>
-            <div v-html="page.data.text.iv"></div> 
+    <div class="flex flex-col justify-center items-center px-8 py-20">
+        <div class="text-center flex flex-col gap-6 w-full max-w-[600px]">
+            <h1 class="text-4xl"> {{ page.data.title.iv }} </h1>
+            <div class="flex flex-col gap-4" v-html="page.data.text.iv"></div>
         </div>
+    </div>
+
+    <div class="flex flex-col gap-20 mb-20">
         <div v-if="pending">
             Loading ...
         </div>
@@ -13,14 +16,14 @@
                 <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="">
                     <nuxt-img :src="`${config.API_ASSETS_URL}/${post.data.image.iv[0]}`" :alt="post.data.title.iv"
                         sizes="sm:200px lg:400px" class="w-full h-[620px] object-cover" />
-                  
+
                 </NuxtLink>
 
                 {{ post.data.title.iv }}
-                
-                    <button @click="store.hit()">CLICK ME 2</button>
 
-                
+                <button @click="store.hit()">CLICK ME 2</button>
+
+
             </div>
         </div>
     </div>

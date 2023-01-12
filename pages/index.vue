@@ -27,7 +27,7 @@
                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies
                     vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
                 <NuxtLink to="/posts/" aria-label="content" class="btn">
-                    <span>Wines</span>
+                    <span>More</span>
                 </NuxtLink>
             </div>
             <div>

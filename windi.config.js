@@ -27,8 +27,16 @@ export default defineConfig({
     },
 
     /* typography: ({ theme }) => ({
-
-    }) */ 
+      DEFAULT: {
+        css: {
+          p: { 
+            fontSize: 'inherit',
+            color: '#9ba0b3',
+            marginBottom: '2rem',
+          }
+        },
+      },
+    }) */
 
 
   }
