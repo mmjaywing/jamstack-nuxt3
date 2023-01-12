@@ -1,6 +1,7 @@
 <template>
-    <div class="bg-hero bg-cover h-hero min-h-[600px] w-full flex ">
-        <div class="container mx-auto px-4 flex items-end py-8">
+    <div class="bg-hero bg-cover h-hero min-h-[600px] w-full flex relative">
+        <div class="bg-gradient-to-t from-[#16171D] to-transparent h-hero min-h-[600px] w-full absolute t-0 l-0 z-10 bg-opacity-50"></div>
+        <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
             <div class="text-white flex gap-6 flex-col">
                 <h1 class="text-7xl">Welcome</h1>
                 <p class="text-xl max-w-[600px] serif">Praesent commodo cursus magna, vel scelerisque nisl consectetur
@@ -17,7 +18,6 @@
         <div class="flex flex-col px-8 py-20 gap-6 text-center min-w-full items-center justify-center">
             <h2 class="text-3xl">Cras mattis consectetur purus sit amet fermentum.</h2>
         </div>
-
         <div class="grid grid-cols-4 px-8 gap-6">
             <div class="flex flex-col gap-6">
                 <nuxt-img
@@ -40,7 +40,6 @@
         </div>
     </div>
 
-
     <div class="flex h-hero min-h-[600px] bg-[#16171D] ">
         <div class="w-3/4">
             <nuxt-img
@@ -59,9 +58,6 @@
             </div>
         </div>
     </div>
-
-
-
 
     <div class="flex h-hero min-h-[600px] bg-[#16171D]">
         <div class="w-3/4">
@@ -87,13 +83,10 @@
         </div>
     </div>
 
-    STORE NAME = {{ store.name }} / {{ store.counter }}
+    <!--STORE NAME = {{ store.name }} / {{ store.counter }}
 
     <button @click="clickMe()">CLICK ME</button>
-
-
-
-    <button @click="store.hit()">CLICK ME 2</button>
+    <button @click="store.hit()">CLICK ME 2</button>-->
 
 
 </template>
@@ -101,8 +94,6 @@
 <script setup>
 
 import { useStore } from '~/store/store'
-
-
 definePageMeta({
     layout: 'page-wide',
 })
@@ -118,7 +109,7 @@ let clickMe = () => {
         counter: store.counter + 1
     })
 };
- 
+
 
 
 </script>
