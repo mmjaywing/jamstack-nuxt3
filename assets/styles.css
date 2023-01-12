@@ -18,3 +18,7 @@ a {
 .btn {
     @apply flex flex-row items-center justify-center h-[60px] self-start px-8 bg-white text-black;
 }
+
+.router-link-active {
+    color: #887935;
+}
