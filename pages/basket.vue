@@ -5,9 +5,13 @@
                 <h1 class="text-7xl"> {{ store.counter }} items in your basket</h1>
                 <p class="text-xl max-w-[600px] serif">Praesent commodo cursus magna, vel scelerisque nisl consectetur
                     et. Vestibulum id ligula porta felis euismod semper.</p>
-                <button v-if="store.counter" class="btn" @click="store.clear()">
+                    <button v-if="store.counter" class="btn" @click="store.clear()">
                     <span>Clear basket</span>
-                </button>
+                </button> 
+                <NuxtLink v-if="!store.counter" to="/posts/" aria-label="content" class="btn">
+                    <span>View wines</span>
+                </NuxtLink>
+
             </div>
         </div>
     </div>

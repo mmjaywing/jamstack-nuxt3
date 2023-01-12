@@ -13,14 +13,25 @@
                 <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="">
                     <nuxt-img :src="`${config.API_ASSETS_URL}/${post.data.image.iv[0]}`" :alt="post.data.title.iv"
                         sizes="sm:200px lg:400px" class="w-full h-[620px] object-cover" />
-                    {{ post.data.title.iv }}
+                  
                 </NuxtLink>
+
+                {{ post.data.title.iv }}
+                
+                    <button @click="store.hit()">CLICK ME 2</button>
+
+                
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
+
+import { useStore } from '~/store/store'
+const store = useStore()
+
+
 const config = useRuntimeConfig();
 definePageMeta({
     layout: 'page-wide',
