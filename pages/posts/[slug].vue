@@ -3,9 +3,8 @@
     <div class="flex flex-col md:flex-row h-hero min-h-[600px]">
         <div class="w-1/2 flex items-center justify-center px-8">
             <div class="w-full max-w-[600px] gap-6 flex flex-col">
-                <h1 class="text-3xl">Title</h1>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit.</p>
+                <h1 class="text-3xl">{{ post.items[0].data.title.iv }}</h1>
+                <p>{{ post.items[0].data.excerpt.iv }}</p>
                 <button @click="store.hit()" class="btn">Add to basket</button>
             </div>
         </div>
@@ -17,21 +16,18 @@
     </div>
 
 
-
-
-
-    <div class="bg-hero bg-cover h-hero min-h-[600px] w-full flex relative">
-        <div
-            class="bg-gradient-to-t from-[#16171D] to-transparent h-hero min-h-[600px] w-full absolute t-0 l-0 z-10 bg-opacity-50">
-        </div>
+    <div class="h-hero min-h-[600px] w-full flex relative"
+        :style="`color: ${post.items[0].data.textColor.iv}; background: ${post.items[0].data.backgroundColor.iv}`">
         <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
-            <div class="text-white flex gap-6 flex-col">
-                <h1 class="text-7xl">Welcome</h1>
+            <div class="text-white flex gap-6 flex-col"
+                :style="`color: ${post.items[0].data.textColor.iv}`">
+                <h1 class="text-7xl mb-4">More</h1>
+                <div v-html="post.items[0].data.text.iv" class="text-xl max-w-[900px] serif"></div>
                 <p class="text-xl max-w-[600px] serif">Praesent commodo cursus magna, vel scelerisque nisl consectetur
                     et. Vestibulum id ligula porta felis euismod semper.</p>
-                <NuxtLink to="/posts/" aria-label="content" class="btn">
+                <!-- <NuxtLink to="/posts/" aria-label="content" class="btn">
                     <span>Wines</span>
-                </NuxtLink>
+                </NuxtLink> -->
             </div>
         </div>
     </div>
