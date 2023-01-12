@@ -10,11 +10,13 @@
             </div>
         </div>
         <div class="w-1/2">
-            <nuxt-img
-                src="https://images.unsplash.com/photo-1630771496884-46ce7c270a52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
-                alt="test" sizes="sm:200px lg:400px" class="w-full h-hero min-h-[600px] object-cover" />
+            <nuxt-img :src="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`" :alt="post.items[0].data.title.iv"
+                        sizes="sm:600px lg:1440px" class="w-full h-[620px] object-cover" />
         </div>
     </div>
+
+     
+
 
 
     <div class="bg-hero bg-cover h-hero min-h-[600px] w-full flex relative">
@@ -69,7 +71,12 @@
     <pre class="text-white">{{ postData }} </pre> -->
 
 
+    <pre class="text-white">{{ post }} </pre>
 
+  
+
+
+    {{ post.items[0].data.image.iv }}
 </template>
 
 <script setup>
@@ -86,7 +93,7 @@ definePageMeta({
 
 const route = useRoute();
 
-const { data: postData } = await useFetch(`${config.API_BASE_URL}/posts?$filter=data/slug/iv%20eq%20%27${route.params.slug}%27`)
-console.log(postData)
+const { data: post } = await useFetch(`${config.API_BASE_URL}/posts?$filter=data/slug/iv%20eq%20%27${route.params.slug}%27`)
+console.log(post)
 
 </script>
