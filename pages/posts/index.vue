@@ -16,16 +16,18 @@
                 <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="">
                     <nuxt-img :src="`${config.API_ASSETS_URL}/${post.data.image.iv[0]}`" :alt="post.data.title.iv"
                         sizes="sm:200px lg:400px" class="w-full h-[620px] object-cover" />
-
                 </NuxtLink>
-                <!-- :style="`background: ${project.data.color.iv}`" -->
-                <div class="p-8 flex flex-col gap-6" style="background: red">
-                    <div class="flex flex-row justify-between">
+                <div class="p-8 flex flex-col gap-6" :style="`background: ${post.data.backgroundColor.iv}`">
+                    <div class="flex flex-row justify-between" :style="`color: ${post.data.textColor.iv}`">
                         <h3 class="text-2xl text-[#101014]">Nulla vitae elit libero</h3>
-                        <h4 class="text-lg text-[#101014]">£345</h4>
+                        <h4 class="text-lg text-[#101014]">£{{ post.data.price.iv }}</h4>
                     </div>
-                    {{ post.data.title.iv }}
-                    <button @click="store.hit()" class="!bg-[#101014] !text-white btn">Add to basket</button>
+                    <p :style="`color: ${post.data.textColor.iv}`">{{ post.data.title.iv }}</p>
+                    <div class="flex flex-row gap-4">
+                        <button @click="store.hit()" class="!bg-[#101014] !text-white btn">Add to basket</button>
+                        <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="!bg-[#8959A8] !text-white btn">Find out
+                            more</NuxtLink>
+                    </div>
                 </div>
             </div>
         </div>
