@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     }
   },
 
-  vite: {
+  /* vite: {
     css: {
       preprocessorOptions: {
         scss: {
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
         }
       }
     }
-  },
+  }, */ 
 
   modules: [
     'nuxt-windicss',

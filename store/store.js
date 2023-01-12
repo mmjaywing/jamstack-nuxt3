@@ -1,39 +1,42 @@
 //store.ts
-import { defineStore, acceptHMRUpdate} from 'pinia'
+import { defineStore, acceptHMRUpdate } from 'pinia'
 
 export const useStore = defineStore('storeId', {
-  // arrow function recommended for full type inference
-  /* state: () => {
-    return {
-      // all these properties will have their type inferred automatically
-      counter: 10,
-      name: 'Eduardo',
-      isAdmin: true,
-    }
-  }, */ 
-
-  state: () => {
-    return {
+    // arrow function recommended for full type inference
+    /* state: () => {
+      return {
+        // all these properties will have their type inferred automatically
         counter: 10,
-        name: 'Maki',
-    }
-  },
-  persist: true,
+        name: 'Eduardo',
+        isAdmin: true,
+      }
+    }, */
 
-  actions:{
-     hit(){
-       this.counter++;
-     }
-  }, 
+    state: () => {
+        return {
+            counter: 10,
+            name: 'Maki',
+        }
+    },
+    persist: true,
 
-  getters:{
-    getCount:(state)=>state.counter,
-    getUser: (state)=> {
-      state.name
+    actions: {
+        hit() {
+            this.counter++;
+        },
+        clear() {
+            this.counter = 0
+        }
+    },
+
+    getters: {
+        getCount: (state) => state.counter,
+        getUser: (state) => {
+            state.name
+        }
     }
-  }
 })
 
 if (import.meta.hot) {
-  import.meta.hot.accept(acceptHMRUpdate(useStore, import.meta.hot))
+    import.meta.hot.accept(acceptHMRUpdate(useStore, import.meta.hot))
 }
