@@ -83,6 +83,9 @@ definePageMeta({
     layout: 'page-wide',
 })
 
+ 
+
+
 const store = useStore()
 
 console.log("STORE = ", store)
@@ -98,5 +101,13 @@ let clickMe = () => {
 const config = useRuntimeConfig();
 const { data: page } = await useFetch(`${config.API_BASE_URL}/home/e645cdda-04e7-41f2-8d89-a3e21fd18b25`)
 console.log(page)
+
+useHead({
+    title: 'My App',
+    meta: [
+        { name: 'description', content: 'My amazing site.' }
+    ],
+}) 
+
 
 </script>
