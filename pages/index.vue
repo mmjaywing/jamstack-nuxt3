@@ -47,7 +47,7 @@
                 alt="test" sizes="sm:200px lg:400px" class="w-full h-hero object-cover" />
         </div>
         <div class="w-1/4 flex justify-between flex-col p-8 gap-6">
-            <h3 class="text-2xl">Vestibulum Lorem Commodo</h3>
+            <h3 class="text-4xl">Vestibulum Lorem Commodo</h3>
             <div class="flex flex-col gap-6">
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                     Integer
