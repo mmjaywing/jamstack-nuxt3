@@ -10,12 +10,13 @@
             </div>
         </div>
         <div class="w-1/2">
-            <nuxt-img :src="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`" :alt="post.items[0].data.title.iv"
-                        sizes="sm:600px lg:1440px" class="w-full h-[620px] object-cover" />
+            <nuxt-img :src="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`"
+                :alt="post.items[0].data.title.iv" sizes="sm:200px lg:400px"
+                class="w-full h-hero min-h-[600px] object-cover" />
         </div>
     </div>
 
-     
+
 
 
 
@@ -37,13 +38,18 @@
 
     <div class="flex flex-col py-20 px-4">
         <div class="container mx-auto  flex flex-col  relative z-20 items-center gap-6">
-        <h3 class="text-2xl">Nulla vitae elit libero</h3>
-        <p class="md:columns-2">Donec sed odio dui. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.
-            Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel
-            augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-            auctor. natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel
-            augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-            auctor.</p>
+            <h3 class="text-2xl">Nulla vitae elit libero</h3>
+            <p class="md:columns-2">Donec sed odio dui. Curabitur blandit tempus porttitor. Vestibulum id ligula porta
+                felis euismod semper.
+                Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus
+                vel
+                augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                dolor
+                auctor. natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis
+                lacus vel
+                augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                dolor
+                auctor.</p>
         </div>
     </div>
 
@@ -51,13 +57,18 @@
 
     <div class="flex flex-col py-20 px-4 bg-white">
         <div class="container mx-auto  flex flex-col  relative z-20 items-center gap-6">
-        <h3 class="text-2xl">Nulla vitae elit libero</h3>
-        <p class="">Donec sed odio dui. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper.
-            Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel
-            augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-            auctor. natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel
-            augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-            auctor.</p>
+            <h3 class="text-2xl">Nulla vitae elit libero</h3>
+            <p class="">Donec sed odio dui. Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod
+                semper.
+                Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus
+                vel
+                augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                dolor
+                auctor. natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis
+                lacus vel
+                augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                dolor
+                auctor.</p>
         </div>
     </div>
 
@@ -73,7 +84,7 @@
 
     <pre class="text-white">{{ post }} </pre>
 
-  
+
 
 
     {{ post.items[0].data.image.iv }}
