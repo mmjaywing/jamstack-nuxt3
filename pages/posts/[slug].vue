@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row h-hero min-h-[600px]">
         <div class="w-1/2 flex items-center justify-center px-8">
             <div class="w-full max-w-[600px] gap-6 flex flex-col">
-                <h1 class="text-3xl">{{ post.items[0].data.title.iv }}</h1>
+                <h1 class="text-3xl">{{ data.title }} {{ post.items[0].data.title.iv }}</h1>
                 <p>{{ post.items[0].data.excerpt.iv }}</p>
                 <button @click="store.hit()" class="btn">Add to basket</button>
             </div>
@@ -19,8 +19,7 @@
     <div class="h-hero min-h-[600px] w-full flex relative"
         :style="`color: ${post.items[0].data.textColor.iv}; background: ${post.items[0].data.backgroundColor.iv}`">
         <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
-            <div class="text-white flex gap-6 flex-col"
-                :style="`color: ${post.items[0].data.textColor.iv}`">
+            <div class="text-white flex gap-6 flex-col" :style="`color: ${post.items[0].data.textColor.iv}`">
                 <h1 class="text-7xl mb-4">More</h1>
                 <div v-html="post.items[0].data.text.iv" class="text-xl max-w-[900px] serif"></div>
                 <p class="text-xl max-w-[600px] serif">Praesent commodo cursus magna, vel scelerisque nisl consectetur
@@ -89,9 +88,8 @@
 <script setup>
 import { useStore } from '~/store/store'
 const store = useStore()
-
-
 const config = useRuntimeConfig();
+
 
 
 definePageMeta({
@@ -102,5 +100,23 @@ const route = useRoute();
 
 const { data: post } = await useFetch(`${config.API_BASE_URL}/posts?$filter=data/slug/iv%20eq%20%27${route.params.slug}%27`)
 console.log(post)
+
+
+const data = reactive({
+    title: 'TEST TITLE' // await post.items[0].data.title.iv
+})
+
+
+
+/* 
+var foo = reactive({});
+
+ foo = {
+  'alpha': 'puffin',
+  'beta': 'beagle'
+};
+var keys = Object.keys(foo);
+console.log(keys)
+console.log(foo.alpha) */
 
 </script>
