@@ -18,8 +18,8 @@
                         sizes="sm:200px lg:400px" class="w-full h-[620px] object-cover" />
 
                 </NuxtLink>
-
-                <div class="p-8 flex flex-col gap-6">
+                <!-- :style="`background: ${project.data.color.iv}`" -->
+                <div class="p-8 flex flex-col gap-6" style="background: red">
                     <div class="flex flex-row justify-between">
                         <h3 class="text-2xl text-[#101014]">Nulla vitae elit libero</h3>
                         <h4 class="text-lg text-[#101014]">£345</h4>
