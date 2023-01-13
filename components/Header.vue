@@ -33,8 +33,4 @@ import { useStore } from '~/store/store'
 const store = useStore()
 
 
-
-
-
-
 </script>
