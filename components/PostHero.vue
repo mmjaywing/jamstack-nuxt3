@@ -15,6 +15,9 @@
 </template>
 
 <script setup>
+import { useStore } from '~/store/store'
+const store = useStore()
+
 const props = defineProps({
     image: {
         type: String,
@@ -29,4 +32,5 @@ const props = defineProps({
         default: undefined,
     },
 })
+
 </script>
