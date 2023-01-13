@@ -4,11 +4,9 @@
 
     <PostContentOne :color="post.items[0].data.backgroundColor.iv" :hasWhiteText="post.items[0].data.hasWhiteText.iv"
         :title="post.items[0].data.title.iv" :excerpt="post.items[0].data.text.iv" />
-
      
-    <PostContentTwo :image="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`"
+    <PostContentTwo :image="`${config.API_ASSETS_URL}/${post.items[0].data.imageTwo.iv}`"
         :title="post.items[0].data.title.iv" :excerpt="post.items[0].data.excerpt.iv" />
-
 
     <!-- 
     <div class="flex flex-col py-20 px-4">
@@ -28,8 +26,6 @@
         </div>
     </div>
 
-
-
     <div class="flex flex-col py-20 px-4 bg-white">
         <div class="container mx-auto  flex flex-col  relative z-20 items-center gap-6">
             <h3 class="text-2xl">Nulla vitae elit libero</h3>
@@ -46,13 +42,9 @@
                 auctor.</p>
         </div>
     </div> -->
-
-
 </template>
 
-<script setup>
-import { useStore } from '~/store/store'
-const store = useStore()
+<script setup> 
 const config = useRuntimeConfig();
 
 definePageMeta({

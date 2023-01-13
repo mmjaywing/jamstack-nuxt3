@@ -32,5 +32,4 @@ const props = defineProps({
         default: undefined,
     },
 })
-
 </script>

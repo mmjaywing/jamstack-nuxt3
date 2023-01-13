@@ -21,7 +21,6 @@
 
 import { useStore } from '~/store/store'
 
-
 definePageMeta({
     layout: 'page-wide',
 })
@@ -31,13 +30,9 @@ const store = useStore()
 console.log("STORE = ", store)
 console.log("STORE = ", store.name)
 
-
 let clickMe = () => {
     store.$patch({
         counter: store.counter + 1
     })
 };
-
-
-
 </script>
