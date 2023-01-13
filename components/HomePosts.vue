@@ -15,7 +15,7 @@
                     <NuxtLink :to="`/posts/${post.data.slug.iv}`">
                         <nuxt-img :src="`${config.API_ASSETS_URL}/${post.data.image.iv[0]}`" :alt="post.data.title.iv"
                             sizes="sm:200px lg:400px"
-                            class="w-full h-100 object-cover transform duration-200 hover:scale-115" />
+                            class="w-full h-100 object-cover transform duration-200 hover:scale-110" />
                     </NuxtLink>
                 </div>
                 <div class="p-8 flex flex-col gap-6">
