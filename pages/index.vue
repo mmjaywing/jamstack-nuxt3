@@ -1,25 +1,9 @@
 <template>
-    <div class=" h-hero min-h-[600px]     w-full flex relative">
 
-        <nuxt-img :src="`${config.API_ASSETS_URL}/${page.data.imageHero.iv}`" alt="test" sizes="sm:200px lg:400px"
-            class="w-full h-hero object-cover h-hero min-h-[600px] absolute top-0 left-0" />
-        <div
-            class="bg-gradient-to-t from-[#16171D] to-transparent h-hero min-h-[600px] w-full absolute t-0 l-0 z-10 bg-opacity-50">
-        </div>
+    <HomeHero :image="`${config.API_ASSETS_URL}/${page.data.imageHero.iv}`" :title="page.data.title.iv"
+        :excerpt="page.data.excerpt.iv" />
 
-        <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
-            <div class="text-white flex gap-10 flex-col">
-                <h1 class="text-5xl md:text-7xl">{{ page.data.title.iv }}</h1>
-                <p class="text-xl max-w-[600px] serif">{{ page.data.excerpt.iv }}</p>
-
-                <NuxtLink to="/posts/" aria-label="content" class="btn">
-                    <span>Wines</span>
-                </NuxtLink>
-            </div>
-        </div>
-    </div>
-
-    <HomePosts />
+    <HomePosts foobar="123" />
 
 
 
