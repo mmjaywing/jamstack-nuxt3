@@ -16,7 +16,11 @@ a {
 }
 
 .btn {
-    @apply flex flex-row items-center justify-center h-[60px] self-start px-8 bg-white text-black font-sans;
+    @apply flex flex-row items-center justify-center h-[60px] self-start px-8 bg-white text-black font-sans transform duration-100;
+}
+
+.btn:hover {
+    @apply translate-y-[-4px] scale-105;
 }
 
 .router-link-active {
