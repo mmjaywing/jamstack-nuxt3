@@ -42,7 +42,7 @@
             Loading ...
         </div>
 
-        <div v-else class="grid grid-cols-4 gap-8 px-8">
+        <div v-else class="flex flex-col md:grid md:grid-cols-4 gap-8 px-8">
             <div v-for="post in posts.items" :key="post" :style="`background: ${post.data.backgroundColor.iv}`">
 
 
