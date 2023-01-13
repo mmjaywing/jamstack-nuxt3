@@ -1,5 +1,4 @@
 <template>
-
     <div class="flex flex-col md:flex-row h-hero min-h-[600px]">
         <div class="w-1/2 flex items-center justify-center px-8">
             <div class="w-full max-w-[600px] gap-6 flex flex-col">
@@ -15,18 +14,14 @@
         </div>
     </div>
 
-
     <div class="h-hero min-h-[600px] w-full flex relative"
-        :style="`color: ${post.items[0].data.textColor.iv}; background: ${post.items[0].data.backgroundColor.iv}`">
+        :style="`background: ${post.items[0].data.backgroundColor.iv}`">
         <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
-            <div class="text-white flex gap-6 flex-col" :style="`color: ${post.items[0].data.textColor.iv}`">
-                <h1 class="text-5xl md:text-7xl mb-4">More</h1>
-                <div v-html="post.items[0].data.text.iv" class="text-xl max-w-[900px] serif"></div>
-                <p class="text-xl max-w-[600px] serif">Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                    et. Vestibulum id ligula porta felis euismod semper.</p>
-                <!-- <NuxtLink to="/posts/" aria-label="content" class="btn">
-                    <span>Wines</span>
-                </NuxtLink> -->
+            <div class="text-white flex gap-6 flex-col">
+                <h1 class="text-5xl md:text-7xl mb-4"
+                    :class="(post.items[0].data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">More</h1>
+                <div v-html="post.items[0].data.text.iv" class="text-xl max-w-[900px] serif"
+                    :class="(post.items[0].data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'"></div>
             </div>
         </div>
     </div>
