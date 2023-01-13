@@ -84,34 +84,11 @@
 import { useStore } from '~/store/store'
 const store = useStore()
 const config = useRuntimeConfig();
-
-
-
 definePageMeta({
     layout: 'page-wide',
 })
-
 const route = useRoute();
-
 const { data: post } = await useFetch(`${config.API_BASE_URL}/posts?$filter=data/slug/iv%20eq%20%27${route.params.slug}%27`)
-console.log(post)
 
-
-const data = reactive({
-    title: 'TEST TITLE' // await post.items[0].data.title.iv
-})
-
-
-
-/* 
-var foo = reactive({});
-
- foo = {
-  'alpha': 'puffin',
-  'beta': 'beagle'
-};
-var keys = Object.keys(foo);
-console.log(keys)
-console.log(foo.alpha) */
 
 </script>
