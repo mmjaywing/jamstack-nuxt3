@@ -60,5 +60,20 @@ export default defineNuxtConfig({
       API_BASE_URL: process.env.API_BASE_URL || "default_api_url",
       API_ASSETS_URL: process.env.API_ASSETS_URL || "default_api_url"
     }
+  },
+
+  routeRules: {
+    /* '/blog/**': { swr: true },
+    '/blog/**': { swr: 600 },
+    '/blog/**': { static: true },
+    '/blog/**': { cache: {  } },
+    '/assets/**': { headers: { 'cache-control': 's-maxage=0' } },
+    '/api/v1/**': { cors: true, headers: { 'access-control-allowed-methods': 'GET' } },
+    '/old-page': { redirect: '/new-page' } */ 
+
+
+    'https://cloud.squidex.io/api/assets/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/**': { headers: { 'cache-control': 's-maxage=1d' } },
+     
+
   }
 })
