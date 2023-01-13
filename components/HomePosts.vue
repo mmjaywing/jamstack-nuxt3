@@ -10,20 +10,24 @@
         </div>
         <div v-else class="flex flex-col md:grid md:grid-cols-4 gap-8 md:px-8">
             <div v-for="post in posts.items" :key="post" :style="`background: ${post.data.backgroundColor.iv}`">
+
                 <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="">
                     <nuxt-img :src="`${config.API_ASSETS_URL}/${post.data.image.iv[0]}`" :alt="post.data.title.iv"
                         sizes="sm:200px lg:400px" class="w-full h-100 object-cover" />
                 </NuxtLink>
                 <div class="p-8 flex flex-col gap-6">
                     <div class="flex flex-row justify-between">
-                        <h3 class="text-2xl text-[#101014]" :style="`color: ${post.data.textColor.iv}`"> {{
-                            post.data.title.iv
-                        }}</h3>
-                        <h4 class="text-lg text-[#101014]" :style="`color: ${post.data.textColor.iv}`">£{{
+                        <h3 class="text-2xl " :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">
+                            {{
+                                post.data.title.iv
+                            }}</h3>
+                        <h4 class="text-lg" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">£{{
                             post.data.price.iv
                         }}</h4>
                     </div>
-                    <p class="h-20" :style="`color: ${post.data.textColor.iv}`">{{ post.data.excerpt.iv }}</p>
+                    <p class="h-20" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">{{
+                        post.data.excerpt.iv
+                    }}</p>
                     <div class="flex flex-row gap-4">
                         <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="  btn">Find out
                             more</NuxtLink>
