@@ -3,7 +3,7 @@
         <nuxt-img :src="image" alt="test" sizes="sm:200px lg:400px"
             class="w-full h-hero object-cover h-hero min-h-[600px] absolute top-0 left-0" />
         <div
-            class="bg-gradient-to-t from-[#16171D] to-transparent h-hero min-h-[600px] w-full absolute t-0 l-0 z-10 bg-opacity-50">
+            class="bg-gradient-to-t from-[#16171D] to-transparent h-hero min-h-[600px] w-full absolute t-0 l-0 z-10 bg-opacity-30">
         </div>
 
         <div class="container mx-auto px-4 flex items-end py-8 relative z-20">

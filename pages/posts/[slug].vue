@@ -1,22 +1,16 @@
 <template>
-
-
     <PostHero :image="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`" :title="post.items[0].data.title.iv"
         :excerpt="post.items[0].data.excerpt.iv" />
 
+    <PostContentOne :color="post.items[0].data.backgroundColor.iv" :hasWhiteText="post.items[0].data.hasWhiteText.iv"
+        :title="post.items[0].data.title.iv" :excerpt="post.items[0].data.text.iv" />
 
-    <div class="h-hero min-h-[600px] w-full flex relative"
-        :style="`background: ${post.items[0].data.backgroundColor.iv}`">
-        <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
-            <div class="text-white flex gap-6 flex-col">
-                <h1 class="text-5xl md:text-7xl mb-4"
-                    :class="(post.items[0].data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">More</h1>
-                <div v-html="post.items[0].data.text.iv" class="text-xl max-w-[900px] serif"
-                    :class="(post.items[0].data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'"></div>
-            </div>
-        </div>
-    </div>
+     
+    <PostContentTwo :image="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`"
+        :title="post.items[0].data.title.iv" :excerpt="post.items[0].data.excerpt.iv" />
 
+
+    <!-- 
     <div class="flex flex-col py-20 px-4">
         <div class="container mx-auto  flex flex-col  relative z-20 items-center gap-6">
             <h3 class="text-2xl">Nulla vitae elit libero</h3>
@@ -51,7 +45,7 @@
                 dolor
                 auctor.</p>
         </div>
-    </div>
+    </div> -->
 
 
 </template>
