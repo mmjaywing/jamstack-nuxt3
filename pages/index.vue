@@ -1,6 +1,11 @@
 <template>
-    <div class="bg-hero bg-cover h-hero min-h-[600px] w-full flex relative" :style="`background: url(${config.API_ASSETS_URL}/${page.data.imageHero.iv}) no-repeat center center`">
-        <div class="bg-gradient-to-t from-[#16171D] to-transparent h-hero min-h-[600px] w-full absolute t-0 l-0 z-10 bg-opacity-50"></div>
+    <div class=" h-hero min-h-[600px]     w-full flex relative">
+
+        <nuxt-img :src="`${config.API_ASSETS_URL}/${page.data.imageHero.iv}`" alt="test" sizes="sm:200px lg:400px"
+            class="w-full h-hero object-cover h-hero min-h-[600px] absolute top-0 left-0" />
+        <div class="bg-gradient-to-t from-[#16171D] to-transparent h-hero min-h-[600px] w-full absolute t-0 l-0 z-10 bg-opacity-50">
+        </div>
+
         <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
             <div class="text-white flex gap-10 flex-col">
                 <h1 class="text-7xl">{{ page.data.title.iv }}</h1>
@@ -13,17 +18,9 @@
         </div>
     </div>
 
-
-    <!-- 
-                <nuxt-img :src="`${config.API_ASSETS_URL}/${page.data.imageHero.iv}`" :alt="page.data.title.iv"
-                        sizes="sm:200px lg:400px" class="w-full h-hero min-h-[600px] object-cover  top-0 left-0" />
-
-    -->
-
-
     <HomePosts />
 
-    
+
 
     <div class="flex h-hero min-h-[600px] bg-[#16171D] ">
         <div class="w-3/4">
@@ -83,7 +80,7 @@ definePageMeta({
     layout: 'page-wide',
 })
 
- 
+
 
 
 const store = useStore()
@@ -107,7 +104,7 @@ useHead({
     meta: [
         { name: 'description', content: 'My amazing site.' }
     ],
-}) 
+})
 
 
 </script>
