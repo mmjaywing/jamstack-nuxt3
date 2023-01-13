@@ -1,7 +1,7 @@
 <template>
-    <div class="h-hero min-h-[600px] w-full flex relative" :style="`background: ${color}`">
-        <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
-            <div class="text-white flex gap-6 flex-col">
+    <div class="md:h-hero min-h-[600px] w-full flex relative" :style="`background: ${color}`">
+        <div class="container mx-auto px-4 flex py-20 relative z-20">
+            <div class="text-white flex gap-6 flex-col justify-between ">
                 <h1 class="text-5xl md:text-7xl mb-4" :class="hasWhiteText ? '!text-white' : '!text-[#101014]'">{{
                     title
                 }}</h1>
