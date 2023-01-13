@@ -20,7 +20,7 @@
         :style="`color: ${post.items[0].data.textColor.iv}; background: ${post.items[0].data.backgroundColor.iv}`">
         <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
             <div class="text-white flex gap-6 flex-col" :style="`color: ${post.items[0].data.textColor.iv}`">
-                <h1 class="text-7xl mb-4">More</h1>
+                <h1 class="text-5xl md:text-7xl mb-4">More</h1>
                 <div v-html="post.items[0].data.text.iv" class="text-xl max-w-[900px] serif"></div>
                 <p class="text-xl max-w-[600px] serif">Praesent commodo cursus magna, vel scelerisque nisl consectetur
                     et. Vestibulum id ligula porta felis euismod semper.</p>

@@ -9,7 +9,7 @@
 
         <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
             <div class="text-white flex gap-10 flex-col">
-                <h1 class="text-7xl">{{ page.data.title.iv }}</h1>
+                <h1 class="text-5xl md:text-7xl">{{ page.data.title.iv }}</h1>
                 <p class="text-xl max-w-[600px] serif">{{ page.data.excerpt.iv }}</p>
 
                 <NuxtLink to="/posts/" aria-label="content" class="btn">
