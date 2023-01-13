@@ -1,18 +1,9 @@
 <template>
-    <div class="flex flex-col md:flex-row h-hero min-h-[600px]">
-        <div class="w-1/2 flex items-center justify-center px-8">
-            <div class="w-full max-w-[600px] gap-6 flex flex-col">
-                <h1 class="text-3xl">{{ post.items[0].data.title.iv }}</h1>
-                <p>{{ post.items[0].data.excerpt.iv }}</p>
-                <button @click="store.hit()" class="btn">Add to basket</button>
-            </div>
-        </div>
-        <div class="w-1/2">
-            <nuxt-img :src="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`"
-                :alt="post.items[0].data.title.iv" sizes="sm:200px lg:400px"
-                class="w-full h-hero min-h-[600px] object-cover" />
-        </div>
-    </div>
+
+
+    <PostHero :image="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`" :title="post.items[0].data.title.iv"
+        :excerpt="post.items[0].data.excerpt.iv" />
+
 
     <div class="h-hero min-h-[600px] w-full flex relative"
         :style="`background: ${post.items[0].data.backgroundColor.iv}`">
