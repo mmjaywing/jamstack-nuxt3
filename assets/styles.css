@@ -20,7 +20,7 @@ a {
 }
 
 .btn:hover {
-    @apply translate-y-[-4px] scale-105;
+    @apply translate-y-[-4px] /* scale-105 */ ;
 }
 
 .router-link-active {

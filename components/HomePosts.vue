@@ -9,12 +9,15 @@
             Loading ...
         </div>
         <div v-else class="flex flex-col md:grid md:grid-cols-4 gap-8 md:px-8">
-            <div v-for="post in posts.items" :key="post" :style="`background: ${post.data.backgroundColor.iv}`">
-
-                <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="">
-                    <nuxt-img :src="`${config.API_ASSETS_URL}/${post.data.image.iv[0]}`" :alt="post.data.title.iv"
-                        sizes="sm:200px lg:400px" class="w-full h-100 object-cover" />
-                </NuxtLink>
+            <div v-for="post in posts.items" :key="post" :style="`background: ${post.data.backgroundColor.iv}`"
+                class="relative">
+                <div class="w-full h-100 overflow-hidden relative">
+                    <NuxtLink :to="`/posts/${post.data.slug.iv}`">
+                        <nuxt-img :src="`${config.API_ASSETS_URL}/${post.data.image.iv[0]}`" :alt="post.data.title.iv"
+                            sizes="sm:200px lg:400px"
+                            class="w-full h-100 object-cover transform duration-200 hover:scale-115" />
+                    </NuxtLink>
+                </div>
                 <div class="p-8 flex flex-col gap-6">
                     <div class="flex flex-row justify-between">
                         <h3 class="text-2xl " :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">
