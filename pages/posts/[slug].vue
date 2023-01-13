@@ -3,7 +3,7 @@
     <div class="flex flex-col md:flex-row h-hero min-h-[600px]">
         <div class="w-1/2 flex items-center justify-center px-8">
             <div class="w-full max-w-[600px] gap-6 flex flex-col">
-                <h1 class="text-3xl">{{ data.title }} {{ post.items[0].data.title.iv }}</h1>
+                <h1 class="text-3xl">{{ post.items[0].data.title.iv }}</h1>
                 <p>{{ post.items[0].data.excerpt.iv }}</p>
                 <button @click="store.hit()" class="btn">Add to basket</button>
             </div>
