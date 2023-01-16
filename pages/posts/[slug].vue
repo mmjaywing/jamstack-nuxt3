@@ -1,8 +1,8 @@
 <template>
-    <PostHero :image="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`" :title="post.items[0].data.title.iv"
+    <HeroBasket :image="`${config.API_ASSETS_URL}/${post.items[0].data.image.iv}`" :title="post.items[0].data.title.iv"
         :excerpt="post.items[0].data.excerpt.iv" />
 
-    <PostContentOne :color="post.items[0].data.backgroundColor.iv" :hasWhiteText="post.items[0].data.hasWhiteText.iv"
+    <TextBlockColor :color="post.items[0].data.backgroundColor.iv" :hasWhiteText="post.items[0].data.hasWhiteText.iv"
         :title="post.items[0].data.title.iv" :excerpt="post.items[0].data.text.iv" />
 
     <div class="flex flex-col py-20 px-4 bg-white">
@@ -22,7 +22,7 @@
                     vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 
 
-               
+
 
                 <NuxtLink to="/about/" aria-label="content" class="!bg-black !text-white btn w-full md:w-auto">
                     <span>Wines</span>
@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <PostContentTwo :image="`${config.API_ASSETS_URL}/${post.items[0].data.imageTwo.iv}`"
+    <ImageFeatureLargeTitle :image="`${config.API_ASSETS_URL}/${post.items[0].data.imageTwo.iv}`"
         :title="post.items[0].data.title.iv" :excerpt="post.items[0].data.excerpt.iv" />
 
     <!-- 

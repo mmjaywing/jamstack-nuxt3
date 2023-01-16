@@ -1,16 +1,16 @@
 <template>
-    <HomeHero :image="`${config.API_ASSETS_URL}/${page.data.imageHero.iv}`" :title="page.data.title.iv"
+    <Hero :image="`${config.API_ASSETS_URL}/${page.data.imageHero.iv}`" :title="page.data.title.iv"
         :excerpt="page.data.excerpt.iv" />
 
-    <HomePosts limit="4" />
+    <PostsHorizontal limit="4" />
 
-    <HomeContentOne :image="`${config.API_ASSETS_URL}/${page.data.imageComponentOne.iv}`"
+    <ImageFeature :image="`${config.API_ASSETS_URL}/${page.data.imageComponentOne.iv}`"
         :title="page.data.titleComponentOne.iv" :excerpt="page.data.excerptComponentOne.iv" />
 
-    <HomeContentTwo :image="`${config.API_ASSETS_URL}/${page.data.imageComponentTwo.iv}`"
-    :imageSmall="`${config.API_ASSETS_URL}/${page.data.imageComponentTwoSmall.iv}`"
+    <ImageFeatureAdditionalImage :image="`${config.API_ASSETS_URL}/${page.data.imageComponentTwo.iv}`"
+        :imageSmall="`${config.API_ASSETS_URL}/${page.data.imageComponentTwoSmall.iv}`"
         :title="page.data.titleComponentTwo.iv" :excerpt="page.data.excerptComponentTwo.iv" />
-        
+
 </template>
 
 <script setup>
