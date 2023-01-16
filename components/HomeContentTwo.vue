@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col md:flex-row md:h-hero min-h-[600px] bg-[#16171D] ">
+    <div class="flex flex-col md:flex-row md:h-hero min-h-[600px] bg-eigengrau ">
         <div class="md:w-3/4">
             <nuxt-img :src="image" alt="test" sizes="sm:200px lg:400px" class="w-full h-hero object-cover" />
         </div>

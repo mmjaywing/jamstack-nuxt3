@@ -3,9 +3,6 @@ import { defineConfig } from 'windicss/helpers'
 export default defineConfig({
   darkMode: 'class',
   attributify: true,
-  shortcuts: {
-    'text-primary': 'text-[#00DC82]'
-  },
   plugins: [
     require('windicss/plugin/typography'),
     // ...
@@ -13,6 +10,15 @@ export default defineConfig({
 
   theme: {
     extend: {
+      colors: {
+        black: '#101014',
+        noble: '#1F2128',
+        eigengrau: '#16171D',
+        april: '#9BA0B3',
+        baiko: '#887935'
+      },
+
+
       backgroundImage: {
         'hero': "url('/images/kelsey-knight-udj2tD3WKsY-unsplash.webp')",
       },

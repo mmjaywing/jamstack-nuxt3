@@ -1,5 +1,5 @@
 body {
-    @apply bg-[#1F2128] text-[#9ba0b3] font-serif;
+    @apply bg-noble text-april font-serif;
 }
 
 h1,
@@ -24,5 +24,5 @@ a {
 }
 
 .router-link-active {
-    color: #887935;
+    @apply !text-baiko;
 }

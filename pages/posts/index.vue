@@ -21,22 +21,22 @@
                 </div>
                 <div class="p-8 flex flex-col gap-6" :style="`background: ${post.data.backgroundColor.iv}`">
                     <div class="flex flex-row justify-between gap-6">
-                        <h3 class="text-2xl" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">
+                        <h3 class="text-2xl" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-black'">
                             {{
                                 post.data.title.iv
                             }}</h3>
-                        <h4 class="text-lg]" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">
+                        <h4 class="text-lg]" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-black'">
                             £{{
                                 post.data.price.iv
                             }}</h4>
                     </div>
-                    <p :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">{{
+                    <p :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-black'">{{
                         post.data.excerpt.iv
                     }}</p>
                     <div class="flex flex-col md:flex-row gap-4">
                         <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="btn w-full md:w-auto">Find out
                             more</NuxtLink>
-                        <button @click="store.hit()" class="!bg-[#101014] !text-white btn w-full md:w-auto">Add to
+                        <button @click="store.hit()" class="!bg-black !text-white btn w-full md:w-auto">Add to
                             basket</button>
                     </div>
                 </div>

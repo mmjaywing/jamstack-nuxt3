@@ -1,6 +1,6 @@
  
 <template>
-    <div class="flex flex-col mb-20 bg-[#1F2128]">
+    <div class="flex flex-col mb-20 bg-noble">
         <div class="flex flex-col px-8 py-20 gap-6 text-center min-w-full items-center justify-center">
             <h2 class="text-3xl">Cras mattis consectetur purus sit amet fermentum.</h2>
         </div>
@@ -19,15 +19,15 @@
                 </div>
                 <div class="p-8 flex flex-col gap-6">
                     <div class="flex flex-row justify-between">
-                        <h3 class="text-2xl " :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">
+                        <h3 class="text-2xl " :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-black'">
                             {{
                                 post.data.title.iv
                             }}</h3>
-                        <h4 class="text-lg" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">£{{
+                        <h4 class="text-lg" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-black'">£{{
                             post.data.price.iv
                         }}</h4>
                     </div>
-                    <p class="h-20" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-[#101014]'">{{
+                    <p class="h-20" :class="(post.data.hasWhiteText.iv) ? '!text-white' : '!text-black'">{{
                         post.data.excerpt.iv
                     }}</p>
                     <div class="flex flex-row gap-4">
