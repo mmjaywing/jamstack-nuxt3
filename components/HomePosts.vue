@@ -41,19 +41,19 @@
 </template>
 
 <script setup>
-
 import { useStore } from '~/store/store'
 const store = useStore()
 
-const config = useRuntimeConfig();
 definePageMeta({
     layout: 'page-wide',
 })
+
+const config = useRuntimeConfig();
+
 const { pending, data: posts } = useLazyFetch(`${config.API_BASE_URL}/posts?$orderby=created desc`)
 watch(posts, (newPosts) => {
     // console.log(newPosts.items)
 })
-
 
 const props = defineProps({
     foobar: {

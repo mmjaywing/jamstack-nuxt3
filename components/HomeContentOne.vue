@@ -1,9 +1,7 @@
 <template>
-  <div class="flex flex-col md:flex-row md:h-hero min-h-[600px] bg-[#16171D] ">
+    <div class="flex flex-col md:flex-row md:h-hero min-h-[600px] bg-[#16171D]">
         <div class="md:w-3/4">
-            <nuxt-img
-                :src="image"
-                alt="test" sizes="sm:200px lg:400px" class="w-full h-hero object-cover" />
+            <nuxt-img :src="image" alt="test" sizes="sm:200px lg:400px" class="w-full h-hero object-cover" />
         </div>
         <div class="md:w-1/4 flex justify-between flex-col p-8 gap-6">
             <h3 class="text-4xl">{{ title }}</h3>

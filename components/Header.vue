@@ -1,17 +1,14 @@
 <template>
   <div class="flex w-full bg-[#101014] text-white justify-between h-[60px] px-8 items-center gap-8 fixed top-0 z-40">
     <NuxtLink to="/" aria-label="logo">
-      <nuxt-img src="/logo.svg" alt="logo" class="w-[20px] h-[30px]" sizes="sm:30px lg:30px" width="20px" height="30px" />
+      <nuxt-img src="/logo.svg" alt="logo" class="w-[20px] h-[30px]" sizes="sm:30px lg:30px" width="20px"
+        height="30px" />
     </NuxtLink>
-
     <div class="flex gap-4">
-
       <NuxtLink to="/about/">
         About</NuxtLink>
-
       <NuxtLink to="/posts/">
         Wines</NuxtLink>
-
       <NuxtLink to="/basket/" class="flex flex-row gap-2 items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="w-5 h-5">
@@ -22,15 +19,10 @@
       </NuxtLink>
     </div>
   </div>
-
 </template>
 
 
 <script setup>
-
 import { useStore } from '~/store/store'
-
 const store = useStore()
-
-
 </script>
