@@ -21,10 +21,8 @@
             </div>
 
             <div class="md:w-1/4 ">
-
                 <nuxt-img src="/images/ali-nejatian-iTygyN6iaZU-unsplash.webp" alt="about" sizes="sm:200px lg:400px"
                     class="w-full  min-h-[400px] object-cover" />
-
             </div>
         </div>
     </div>

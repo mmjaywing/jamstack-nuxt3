@@ -14,7 +14,6 @@
 </template>
 
 <script setup>
-
 const props = defineProps({
     image: {
         type: String,

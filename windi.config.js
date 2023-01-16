@@ -17,7 +17,6 @@ export default defineConfig({
         april: '#9BA0B3',
         baiko: '#887935'
       },
-
       backgroundImage: {
         'hero': "url('/images/kelsey-knight-udj2tD3WKsY-unsplash.webp')",
       },
@@ -26,12 +25,11 @@ export default defineConfig({
         serif: ['"Noto Serif"', 'serif']
       },
     },
-
     height: {
       'hero': 'calc(100vh - 60px)',
     },
 
-    /* typography: ({ theme }) => ({
+    typography: ({ theme }) => ({
       DEFAULT: {
         css: {
           p: { 
@@ -41,7 +39,7 @@ export default defineConfig({
           }
         },
       },
-    }) */
+    })
 
 
   }

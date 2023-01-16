@@ -1,6 +1,6 @@
  
 <template>
- 
+
     <div class="flex flex-col gap-20 mb-20">
         <div v-if="pending">
             Loading ...
@@ -10,7 +10,8 @@
                 <div class="w-full h-[400px] md:h-[620px] overflow-hidden relative">
                     <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="">
                         <nuxt-img :src="`${config.API_ASSETS_URL}/${post.data.image.iv[0]}`" :alt="post.data.title.iv"
-                            sizes="sm:200px lg:400px" class="w-full h-[400px] md:h-[620px] object-cover transform duration-200 hover:scale-105" />
+                            sizes="sm:200px lg:400px"
+                            class="w-full h-[400px] md:h-[620px] object-cover transform duration-200 hover:scale-105" />
                     </NuxtLink>
                 </div>
                 <div class="p-8 flex flex-col gap-6" :style="`background: ${post.data.backgroundColor.iv}`">
@@ -40,7 +41,6 @@
 </template>
 
 <script setup>
-
 import { useStore } from '~/store/store'
 const store = useStore()
 
@@ -52,5 +52,4 @@ const { pending, data: posts } = useLazyFetch(`${config.API_BASE_URL}/posts?$ord
 watch(posts, (newPosts) => {
     // console.log(newPosts.items)
 })
- 
 </script>

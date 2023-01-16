@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Jaywing',
+      title: 'Jaywing Title',
       link: [
         {
           rel: 'icon',
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         },
       ],
       meta: [ 
-        { name: 'description', content: 'Meta description' }
+        { name: 'description', content: 'Jaywing meta description' }
       ],
       htmlAttrs: {
         lang: 'en'
@@ -70,10 +70,5 @@ export default defineNuxtConfig({
     '/assets/**': { headers: { 'cache-control': 's-maxage=0' } },
     '/api/v1/**': { cors: true, headers: { 'access-control-allowed-methods': 'GET' } },
     '/old-page': { redirect: '/new-page' } */ 
-
-
-    'https://cloud.squidex.io/api/assets/87972021-6ff5-47f5-bb6f-a2a9ea899fd4/**': { headers: { 'cache-control': 's-maxage=1d' } },
-     
-
   }
 })

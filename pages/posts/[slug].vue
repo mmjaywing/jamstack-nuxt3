@@ -29,7 +29,7 @@ const { data: post } = await useFetch(`${config.API_BASE_URL}/posts?$filter=data
 
 /* 
 const data = reactive({
-    title: 'TEST TITLE' // await post.items[0].data.title.iv
+    title: 'Reactive title test now available in <template>'
 })
 */
 </script>

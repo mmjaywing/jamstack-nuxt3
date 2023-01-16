@@ -6,13 +6,3 @@
     <span class="font-sans text-sm">All rights reserved. © 2023</span>
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>

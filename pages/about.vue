@@ -1,6 +1,5 @@
 <template>
     <HeroBlockColor :title="page.data.title.iv" :excerpt="page.data.text.iv" />
-
 </template>
 
 <script setup>
