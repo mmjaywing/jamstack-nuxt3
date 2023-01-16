@@ -27,7 +27,7 @@ definePageMeta({
 const store = useStore()
 
 // ALTERNATIVE TO '@click="store.clear()'
-// let clickMe = () => {
+// let updateCount = () => {
 //    store.$patch({
 //        counter: store.counter + 1
 //    })

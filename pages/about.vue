@@ -1,21 +1,14 @@
 <template>
-    <div class="bg-[#A6307F] h-hero min-h-[600px] w-full flex ">
-        <div class="container mx-auto px-4 flex items-end py-8">
-            <div class="text-white flex gap-6 flex-col">
-                <nuxt-img src="/logo.svg" alt="logo" class="w-48 mb-8" />
-                <h1 class="text-5xl md:text-7xl">About</h1>
-                <p class="text-xl max-w-[600px] serif">Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                    Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                <NuxtLink to="/posts/" aria-label="content" class="btn">
-                    <span>Wines</span>
-                </NuxtLink>
-            </div>
-        </div>
-    </div>
+    <HeroBlockColor :title="page.data.title.iv" :excerpt="page.data.text.iv" />
+
 </template>
 
 <script setup>
 definePageMeta({
     layout: 'page-wide',
 })
+
+const config = useRuntimeConfig();
+
+const { data: page } = await useFetch(`${config.API_BASE_URL}/pages/4b03fd70-71bb-4506-bc5e-e91f91ddd76a`)
 </script>
