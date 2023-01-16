@@ -44,7 +44,7 @@ onUnmounted(() => {
 const content = ref(null)
 
 const handleScroll = (e) => {
-    // FADE THE CONTENT
+    // fade the content on scroll
     const calc = (100 - ((window.scrollY / 5))) / 100
     if (calc > 0 && calc < 1) {
         content.value.style.opacity = calc
