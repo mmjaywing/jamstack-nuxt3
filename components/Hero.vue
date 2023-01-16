@@ -5,7 +5,7 @@
         <div
             class="bg-gradient-to-t from-eigengrau to-transparent h-hero min-h-[600px] w-full absolute t-0 l-0 z-10 bg-opacity-30">
         </div>
-        <div class="container mx-auto px-4 flex items-end py-8 relative z-20">
+        <div class="container mx-auto px-4 flex items-end py-8 relative z-20" ref="content">
             <div class="text-white flex gap-10 flex-col md:max-w-[600px]">
                 <h1 class="text-5xl md:text-7xl">{{ title }}</h1>
                 <p class="text-xl serif">{{ excerpt }}</p>
@@ -33,4 +33,21 @@ const props = defineProps({
         default: undefined,
     },
 })
+
+onMounted(() => {
+    document.addEventListener('scroll', handleScroll)
+})
+onUnmounted(() => {
+    document.removeEventListener('scroll', handleScroll)
+})
+
+const content = ref(null)
+
+const handleScroll = (e) => {
+    // FADE THE CONTENT
+    const calc = (100 - ((window.scrollY / 5))) / 100
+    if (calc > 0 && calc < 1) {
+        content.value.style.opacity = calc
+    }
+}
 </script>
