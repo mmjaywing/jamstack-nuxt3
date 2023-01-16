@@ -1,6 +1,6 @@
  
 <template>
-    <TitleExcerpt :title="page.data.title.iv" :excerpt="page.data.text.iv" />
+    <TextIntro :title="page.data.title.iv" :excerpt="page.data.text.iv" />
     <PostsVertical />
 </template>
 
