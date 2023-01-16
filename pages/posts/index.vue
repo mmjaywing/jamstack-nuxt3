@@ -1,15 +1,7 @@
  
 <template>
-    <div class="flex flex-col justify-center items-center px-8 py-20">
-        <div class="text-center flex flex-col gap-6 w-full max-w-[600px]">
-            <h1 class="text-4xl"> {{ page.data.title.iv }} </h1>
-            <div class="flex flex-col gap-4" v-html="page.data.text.iv"></div>
-        </div>
-    </div>
-
+    <TitleExcerpt :title="page.data.title.iv" :excerpt="page.data.text.iv" />
     <PostsVertical />
-
-
 </template>
 
 <script setup>

@@ -18,7 +18,6 @@
 </template>
 
 <script setup>
-
 import { useStore } from '~/store/store'
 
 definePageMeta({
@@ -27,12 +26,10 @@ definePageMeta({
 
 const store = useStore()
 
-console.log("STORE = ", store)
-console.log("STORE = ", store.name)
-
-let clickMe = () => {
-    store.$patch({
-        counter: store.counter + 1
-    })
-};
+// ALTERNATIVE TO '@click="store.clear()'
+// let clickMe = () => {
+//    store.$patch({
+//        counter: store.counter + 1
+//    })
+// };
 </script>
