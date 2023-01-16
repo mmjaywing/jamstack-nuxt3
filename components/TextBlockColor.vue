@@ -5,7 +5,7 @@
                 <h1 class="text-5xl md:text-7xl mb-4" :class="hasWhiteText ? '!text-white' : '!text-black'">{{
                     title
                 }}</h1>
-                <div v-html="excerpt" class="text-xl max-w-[900px] serif"
+                <div v-html="excerpt" class="text-2xl max-w-[900px] serif"
                     :class="hasWhiteText ? '!text-white' : '!text-black'"></div>
             </div>
         </div>
