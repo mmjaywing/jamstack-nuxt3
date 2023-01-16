@@ -45,9 +45,9 @@ const content = ref(null)
 
 const handleScroll = (e) => {
     // fade the content on scroll
-    const calc = (100 - ((window.scrollY / 5))) / 100
-    if (calc > 0 && calc < 1) {
-        content.value.style.opacity = calc
+    const fadeAmount = (100 - ((window.scrollY / 6))) / 100
+    if (fadeAmount > 0 && fadeAmount < 1) {
+        content.value.style.opacity = fadeAmount
     }
 }
 </script>
