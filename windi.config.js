@@ -18,7 +18,6 @@ export default defineConfig({
         baiko: '#887935'
       },
 
-
       backgroundImage: {
         'hero': "url('/images/kelsey-knight-udj2tD3WKsY-unsplash.webp')",
       },
