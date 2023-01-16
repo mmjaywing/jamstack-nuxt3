@@ -15,7 +15,7 @@
 
 <script setup>
 definePageMeta({
-    layout: 'page-wide',
+    layout: 'page-full',
 })
 
 useHead({

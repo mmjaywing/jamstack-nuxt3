@@ -21,7 +21,7 @@
 const config = useRuntimeConfig();
 
 definePageMeta({
-    layout: 'page-wide',
+    layout: 'page-full',
 })
 
 const route = useRoute();

@@ -21,7 +21,7 @@
 import { useStore } from '~/store/store'
 
 definePageMeta({
-    layout: 'page-wide',
+    layout: 'page-full',
 })
 
 const store = useStore()

@@ -4,7 +4,7 @@
 
 <script setup>
 definePageMeta({
-    layout: 'page-wide',
+    layout: 'page-full',
 })
 
 const config = useRuntimeConfig();

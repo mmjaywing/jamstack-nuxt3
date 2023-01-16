@@ -45,7 +45,7 @@ import { useStore } from '~/store/store'
 const store = useStore()
 
 definePageMeta({
-    layout: 'page-wide',
+    layout: 'page-full',
 })
 
 const config = useRuntimeConfig();
