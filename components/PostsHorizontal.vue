@@ -43,11 +43,6 @@
 <script setup>
 import { useStore } from '~/store/store'
 const store = useStore()
-
-definePageMeta({
-    layout: 'page-full',
-})
-
 const config = useRuntimeConfig();
 
 const { pending, data: posts } = useLazyFetch(`${config.API_BASE_URL}/posts?$orderby=created desc`)

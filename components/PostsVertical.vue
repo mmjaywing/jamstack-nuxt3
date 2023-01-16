@@ -45,9 +45,7 @@ import { useStore } from '~/store/store'
 const store = useStore()
 
 const config = useRuntimeConfig();
-definePageMeta({
-    layout: 'page-full',
-})
+
 const { pending, data: posts } = useLazyFetch(`${config.API_BASE_URL}/posts?$orderby=created desc`)
 watch(posts, (newPosts) => {
     // console.log(newPosts.items)
