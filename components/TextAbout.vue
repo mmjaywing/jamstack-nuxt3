@@ -16,7 +16,7 @@
                     vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 
                 <NuxtLink to="/about/" aria-label="content" class="!bg-black !text-white btn w-full md:w-auto">
-                    <span>Wines</span>
+                    <span>About</span>
                 </NuxtLink>
             </div>
 
