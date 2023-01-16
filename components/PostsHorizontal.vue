@@ -31,8 +31,7 @@
                         post.data.excerpt.iv
                     }}</p>
                     <div class="flex flex-row gap-4">
-                        <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="  btn">Find out
-                            more</NuxtLink>
+                        <NuxtLink :to="`/posts/${post.data.slug.iv}`" class="btn !text-black">Find out more</NuxtLink>
                     </div>
                 </div>
             </div>
