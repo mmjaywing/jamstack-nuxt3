@@ -22,7 +22,7 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+npm run dev / yarn dev
 ```
 
 ## Production
@@ -30,7 +30,7 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+npm run build / yarn build
 ```
 
 Locally preview production build:
